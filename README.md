@@ -18,7 +18,6 @@ jQuery.
 
 In your view:
 ~~~
-[php]
 	echo $form->hiddenField($model,'yourtimefield');
 	$this->widget('ext.etimepicker.ETimePicker',
 		array('altField'=>'YourModel_yourtimefield'));  // the input ID !
@@ -27,7 +26,6 @@ In your view:
 
 Your sample model:
 ~~~
-[php]
 class YourModel extends CFormModel /*or CActiveRecord !*/ {
   public $yourtimefield;  // a time field: "hh:mm" formatted (24 hours)
   ...
